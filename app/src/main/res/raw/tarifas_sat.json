@@ -1,8 +1,68 @@
 [
-  { "limiteInferior": 0.01, "limiteSuperior": 746.04, "cuotaFija": 0.00, "porcentajeSobreExcedente": 1.92 },
-  { "limiteInferior": 746.05, "limiteSuperior": 6332.05, "cuotaFija": 14.32, "porcentajeSobreExcedente": 6.40 },
-  { "limiteInferior": 6332.06, "limiteSuperior": 11128.01, "cuotaFija": 371.83, "porcentajeSobreExcedente": 10.88 },
-  { "limiteInferior": 11128.02, "limiteSuperior": 12935.82, "cuotaFija": 893.63, "porcentajeSobreExcedente": 16.00 },
-  { "limiteInferior": 12935.83, "limiteSuperior": 31000.00, "cuotaFija": 1182.88, "porcentajeSobreExcedente": 17.92 },
-  { "limiteInferior": 31001.00, "limiteSuperior": 999999.00, "cuotaFija": 4421.46, "porcentajeSobreExcedente": 21.36 }
+  {
+    "limiteInferior": 0.01,
+    "limiteSuperior": 844.59,
+    "cuotaFija": 0.00,
+    "porcentajeSobreExcedente": 1.92
+  },
+  {
+    "limiteInferior": 844.60,
+    "limiteSuperior": 7168.51,
+    "cuotaFija": 16.22,
+    "porcentajeSobreExcedente": 6.40
+  },
+  {
+    "limiteInferior": 7168.52,
+    "limiteSuperior": 12598.02,
+    "cuotaFija": 420.95,
+    "porcentajeSobreExcedente": 10.88
+  },
+  {
+    "limiteInferior": 12598.03,
+    "limiteSuperior": 14644.64,
+    "cuotaFija": 1011.68,
+    "porcentajeSobreExcedente": 16.00
+  },
+  {
+    "limiteInferior": 14644.65,
+    "limiteSuperior": 17533.64,
+    "cuotaFija": 1339.14,
+    "porcentajeSobreExcedente": 17.92
+  },
+  {
+    "limiteInferior": 17533.65,
+    "limiteSuperior": 35362.83,
+    "cuotaFija": 1856.84,
+    "porcentajeSobreExcedente": 21.36
+  },
+  {
+    "limiteInferior": 35362.84,
+    "limiteSuperior": 55736.68,
+    "cuotaFija": 5665.16,
+    "porcentajeSobreExcedente": 23.52
+  },
+  {
+    "limiteInferior": 55736.69,
+    "limiteSuperior": 106410.50,
+    "cuotaFija": 10457.09,
+    "porcentajeSobreExcedente": 30.00
+  },
+  {
+    "limiteInferior": 106410.51,
+    "limiteSuperior": 141880.66,
+    "cuotaFija": 25659.23,
+    "porcentajeSobreExcedente": 32.00
+  },
+  {
+    "limiteInferior": 141880.67,
+    "limiteSuperior": 425641.99,
+    "cuotaFija": 37009.69,
+    "porcentajeSobreExcedente": 34.00
+  },
+  {
+    "limiteInferior": 425642.00,
+    "limiteSuperior": 999999999.00,
+    "cuotaFija": 133488.54,
+    "porcentajeSobreExcedente": 35.00
+  }
 ]
