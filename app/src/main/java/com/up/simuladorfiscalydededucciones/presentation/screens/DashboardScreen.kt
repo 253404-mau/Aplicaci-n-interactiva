@@ -6,6 +6,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.AttachMoney
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.MoneyOff
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -24,6 +25,7 @@ import com.up.simuladorfiscalydededucciones.ui.theme.SimuladorFiscalYDeDeduccion
 fun DashboardScreen(
     uiState: DashboardUiState,
     onNavigateToSimulation: () -> Unit,
+    onNavigateToGuide: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -31,6 +33,11 @@ fun DashboardScreen(
         topBar = {
             TopAppBar(
                 title = { Text("Simulador Fiscal MX") },
+                actions = {
+                    IconButton(onClick = onNavigateToGuide) {
+                        Icon(Icons.Default.Info, contentDescription = "Guía de Deducciones Art. 151")
+                    }
+                },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
             )
         },
@@ -104,7 +111,8 @@ fun DashboardScreenPreview() {
                     SimulationHistoryItem("1", 22500.0, 3500.0, "15/10/2026 11:00")
                 )
             ),
-            onNavigateToSimulation = {}
+            onNavigateToSimulation = {},
+            onNavigateToGuide = {}
         )
     }
 }

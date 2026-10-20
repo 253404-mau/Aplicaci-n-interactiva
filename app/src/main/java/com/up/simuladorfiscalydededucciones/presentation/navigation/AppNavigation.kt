@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.up.simuladorfiscalydededucciones.presentation.screens.DashboardScreen
+import com.up.simuladorfiscalydededucciones.presentation.screens.DeductibleGuideScreen
 import com.up.simuladorfiscalydededucciones.presentation.screens.ResultScreen
 import com.up.simuladorfiscalydededucciones.presentation.screens.SimulationScreen
 import com.up.simuladorfiscalydededucciones.presentation.viewmodel.FiscalViewModel
@@ -16,6 +17,7 @@ sealed class Screen(val route: String) {
     data object Dashboard : Screen("dashboard")
     data object Simulation : Screen("simulation")
     data object Result : Screen("result")
+    data object Guide : Screen("guide")
 }
 
 @Composable
@@ -31,6 +33,9 @@ fun AppNavigation(viewModel: FiscalViewModel = viewModel()) {
                 onNavigateToSimulation = {
                     viewModel.resetSimulation()
                     navController.navigate(Screen.Simulation.route)
+                },
+                onNavigateToGuide = {
+                    navController.navigate(Screen.Guide.route)
                 }
             )
         }
@@ -57,6 +62,11 @@ fun AppNavigation(viewModel: FiscalViewModel = viewModel()) {
                     navController.popBackStack(Screen.Dashboard.route, inclusive = false)
                 },
                 onBackClick = { navController.popBackStack() }
+            )
+        }
+        composable(Screen.Guide.route) {
+            DeductibleGuideScreen(
+                onNavigateBack = { navController.popBackStack() }
             )
         }
     }
